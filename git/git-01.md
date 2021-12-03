@@ -118,3 +118,21 @@ $ git log # commit 로그
 
 - github에 원격 저장소 생성하기
 - 원격 저장소(remote repo) 추가하기
+```
+$ git remote add origin <URL>
+```
+
+-원격 저장소 확인하기
+```
+$ git remote -v
+```
+
+-원격 저장소에 지금까지의 commit들 push하기
+```
+$ git push origin master
+```
+
+-새로운 컴퓨터에서 기존 원격 저장소 저장하기
+```
+$ git clone <URL>
+```
