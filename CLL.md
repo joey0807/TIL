@@ -67,19 +67,21 @@ md(마크다운) 문서 정리 하는 법
 ## Git 코드
 
 ```
-$ git init
+$ git init #초기화 시점에 1회 입력
 $ touch README.md #README md파일 생성
-$ git.add
+$ git.add README.md #README 파일 add(traking)
+#(계정당 1회) 서명이 등록되지 않았다면 계정용 서명 등록
 $ git config --global user.name '내 이름'
 $ git config --global user.email '깃허브에서@쓸메일'
 $ cat ~/.gitconfig # 입력한 이름과 메일이 잘 나오는지 확인
+#commit
 $ git commit -m 'first commit'
 ```
 
 ### 초기화 시점에 1회 입력
 
 ```
-$ git init 
+$ git init #폴더를 리포로 초기화
 ```
 
 ### 작업하며 계속 입력
@@ -105,5 +107,14 @@ $ git log # commit 로그
 ###  `$ git init` 입력 전 확인할 점
 
 - `~`인지
-
 - `(master`)`  떠 있는지
+
+### 모니터링 멍령어
+
+```
+$ git status #현재 상황
+$ git log # commit 로그
+```
+
+- github에 원격 저장소 생성하기
+- 원격 저장소(remote repo) 추가하기
